@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP</title>
+    <style>
+        body{
+
+        background-image: url("lol.jpg");
+        background-size: cover; 
+        background-position: center;
+
+    }
+
+
+        .calabaza {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: yellow;
+            color: black;
+        }
+        .tomate {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #ffea00;
+            
+        }
+    </style>
+    <script>
+        function change() {
+            var userInput = document.getElementById("input").value;
+            document.getElementById("Text").innerText = userInput;
+        }
+    </script>
+</head>
+   
+<body>
+    <div class="calabaza">
+        <h1>Pagina personal</h1>
+        
+        <p>Name: Tomás Cristobal Pavez Blumenfeld</p>
+        <p>Major:Industrial Engineering</p>
+        <p>Year of University Enrollment: 2022</p>
+        <p>Link: <a href="https://github.com/Tomas-pavez/TomasPavez.github.io" target="_blank">github.com</a></p>
+        
+        <h2>Personal Summary</h2>
+        <p> Hello, my name is Tomás. I'm 20 years old and I'm studying industrial engineering. I enjoy calisthenics, playing the piano, and partying with my friends.</p>
+        
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Git</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Excel</td>
+                <td>Medium</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Spanish</td>
+                <td>Native</td>
+            </tr>
+        </table>
+
+        <div class="tomate">
+            <h2>Update Section</h2>
+            <input type="text" id="input" placeholder="enter the text">
+            <button class="button" onclick="change()">Update</button>
+            <p id="Text"></p>
+        </div>
+    </div>
+</body>
+</html>
