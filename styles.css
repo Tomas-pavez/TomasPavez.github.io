@@ -28,7 +28,7 @@ body {
 }
 
 table {
-    width: 100%;
+    width: 20%;
     border-collapse: collapse;
 }
 
@@ -80,7 +80,7 @@ td {
     border: 1px solid #ddd;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .calabaza {
         padding: 20px;
     }
@@ -147,7 +147,4 @@ td {
     }
 }
 
-.color-button {
-    background-color: rgb(153, 104, 40);
-}
 
