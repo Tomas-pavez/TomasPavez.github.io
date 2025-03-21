@@ -1,0 +1,149 @@
+body {
+    background-image: url("momo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.calabaza {
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.block {
+    background-color: antiquewhite;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: yellow;
+    color: black;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tomate {
+    background-color: antiquewhite;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    background-color: #b3ff00;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #9fdf00;
+}
+
+.result-block {
+    background-color: antiquewhite;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 50px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .calabaza {
+        padding: 20px;
+    }
+    
+    .block, .tomate, .result-block {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
+    .calabaza {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+.colo {
+    color: #ddd;
+}
+.card {
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.card-footer {
+    background-color: transparent;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+    padding-top: 0.75rem;
+}
+
+#news-container .card {
+    background-color: white;
+}
+
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: #9fdf00;
+}
+
+
+@media (max-width: 992px) {
+    #news-container .col-md-6 {
+        margin-bottom: 1rem;
+    }
+}
+
