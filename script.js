@@ -48,6 +48,10 @@ function displayNews(articles) {
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = '';
     
+    if (!articles || articles.length === 0) {
+        return;
+    }
+    
     articles.slice(0, 11).forEach(article => {
         const articleElement = document.createElement('div');
         articleElement.className = 'col-md-6 col-lg-4 mb-3';
