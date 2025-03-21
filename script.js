@@ -44,16 +44,6 @@ function News() {
         .then(data => {
             displayNews(data.articles);
         })
-        .catch(error => {
-            document.getElementById('news-container').innerHTML = `
-                <div class="col-12">
-                    <div class="alert alert-danger" role="alert">
-                        Failed to load news: ${error.message}
-                    </div>
-                </div>
-            `;
-            console.error('Error fetching news:', error);
-        });
 }
 
 
