@@ -21,7 +21,6 @@
                         <h1 class="mb-4">PERSONAL PAGE</h1>
                     </div>
 
-
                     <div class="row mb-4">
                         <div class="col-md-6 mb-4 mb-md-0">
                             <div class="accordion" id="personalInfoAccordion">
@@ -50,7 +49,6 @@
                             </div>
                         </div>
 
-
                         <div class="col-md-6">
                             <div class="accordion" id="summaryAccordion">
                                 <div class="accordion-item">
@@ -76,25 +74,21 @@
                         </div>
                     </div>
 
-
-
-                    <div class="col-md-12">
-                        <div class="accordion" id="summaryAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingSummary">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSummary" aria-expanded="true"
-                                        aria-controls="collapseSummary">
-                                        Skills
-                                    </button>
-                                </h2>
-                                <div id="collapseSummary" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingSummary" data-bs-parent="#summaryAccordion">
-                                    <div class="accordion-body">
-
-                                        <div class="block">
-                                            <h2 class="mb-3">Skills</h2>
-                                            <div class="table-responsive">
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-4 mb-md-0">
+                            <div class="accordion" id="skillsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSkills">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSkills" aria-expanded="true"
+                                            aria-controls="collapseSkills">
+                                            Skills
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSkills" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingSkills" data-bs-parent="#skillsAccordion">
+                                        <div class="accordion-body">
+                                            <div class="block">
                                                 <table class="table table-bordered mb-0">
                                                     <thead>
                                                         <tr>
@@ -141,20 +135,38 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
 
-                                <div class="row">
-                                    <div class="col-md-6 mb-4 mb-md-0">
-                                        <div class="tomate h-100">
-                                            <h2 class="mb-3">Update Section</h2>
-                                            <input type="text" id="input" placeholder="Enter the text"
-                                                class="form-control mb-3">
-                                            <button class="button w-100">Update</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="result-block h-100">
-                                            <div class="result-container">
-                                                <p id="Text" class="mb-3"></p>
+                        <div class="col-md-6">
+                            <div class="accordion" id="updateAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingUpdate">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseUpdate" aria-expanded="true"
+                                            aria-controls="collapseUpdate">
+                                            Update Section
+                                        </button>
+                                    </h2>
+                                    <div id="collapseUpdate" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingUpdate" data-bs-parent="#updateAccordion">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-12 mb-3">
+                                                    <div class="tomate">
+                                                        <h3 class="mb-3">Text Input</h3>
+                                                        <input type="text" id="input" placeholder="Enter the text"
+                                                            class="form-control mb-3">
+                                                        <button class="button w-100">Update</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="result-block">
+                                                        <div class="result-container">
+                                                            <p id="Text" class="mb-0"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -162,9 +174,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

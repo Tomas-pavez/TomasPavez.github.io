@@ -8,7 +8,7 @@ document.querySelector('.button').addEventListener('click', change);
 
 
 const API_KEY = "8b6dcfc2e7ed42748748024d6bfa27b2";
-const CATEGORY = "science"; 
+const CATEGORY = "Technology"; 
 const NEWS_API_URL = `https://newsapi.org/v2/top-headlines?category=${CATEGORY}&apiKey=${API_KEY}&pageSize=10`;
 
 
@@ -74,7 +74,7 @@ function displayNews(articles) {
     newsContainer.innerHTML = '';
     
     
-    articles.slice(0, 10).forEach(article => {
+    articles.slice(0, 11).forEach(article => {
         const articleElement = document.createElement('div');
         articleElement.className = 'col-md-6 col-lg-4 mb-3';
         
