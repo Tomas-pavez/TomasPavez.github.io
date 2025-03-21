@@ -3,14 +3,11 @@ function change() {
     document.getElementById("Text").innerText = userInput;
 }
 
-
 document.querySelector('.button').addEventListener('click', change);
 
-
 const API_KEY = "8b6dcfc2e7ed42748748024d6bfa27b2";
-const CATEGORY = "Technology"; 
+const CATEGORY = "Sports"; 
 const NEWS_API_URL = `https://newsapi.org/v2/top-headlines?category=${CATEGORY}&apiKey=${API_KEY}&pageSize=10`;
-
 
 function News() {
     const newsSection = document.createElement('div');
@@ -18,7 +15,7 @@ function News() {
     newsSection.innerHTML = `
         <div class="col-12">
             <div class="block">
-                <h2 class="mb-3">Latest ${CATEGORY.charAt(0).toUpperCase() + CATEGORY.slice(1)} News</h2>
+                <h2 class="mb-3"> News about ${CATEGORY.charAt(0).toUpperCase() + CATEGORY.slice(1)}</h2>
                 <div id="news-container" class="row">
                     <div class="col-12 text-center">
                         <div class="spinner-border" role="status">
@@ -30,9 +27,7 @@ function News() {
         </div>
     `;
     
-    
     document.querySelector('.calabaza').appendChild(newsSection);
-    
     
     fetch(NEWS_API_URL)
         .then(response => {
@@ -44,25 +39,14 @@ function News() {
         .then(data => {
             displayNews(data.articles);
         })
+        .catch(error => {
+            console.error('Error fetching news:', error);
+        });
 }
-
 
 function displayNews(articles) {
     const newsContainer = document.getElementById('news-container');
-    if (!articles || articles.length === 0) {
-        newsContainer.innerHTML = `
-            <div class="col-12">
-                <div class="alert alert-info" role="alert">
-                    No news articles found for this category.
-                </div>
-            </div>
-        `;
-        return;
-    }
-    
-    
     newsContainer.innerHTML = '';
-    
     
     articles.slice(0, 11).forEach(article => {
         const articleElement = document.createElement('div');
